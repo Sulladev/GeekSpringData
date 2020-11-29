@@ -28,11 +28,11 @@ public class Product {
     public Product() {
     }
 
-    public Product(String name, double price, int quantity, Category category) {
+    public Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
-        this.category = category;
+
     }
 
     public int getId() {
@@ -90,5 +90,17 @@ public class Product {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, price, quantity, category);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                ", category=" + category.getId() +
+                '}';
     }
 }

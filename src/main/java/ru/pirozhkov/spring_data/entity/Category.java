@@ -23,13 +23,12 @@ public class Category {
     )
     private List<Product> productList = new ArrayList<>();
 
-    public Category() {
-    }
-
-    public Category(String name, List<Product> productList) {
-        this.name = name;
-        this.productList = productList;
-    }
+//    public Category() {
+//    }
+//
+//    public Category(String name) {
+//        this.name = name;
+//    }
 
     public int getId() {
         return id;
